@@ -3,15 +3,43 @@
 <div id="tableau">
   <h3>Récupération des données json stockées dans un return d'une fonction</h3>
   <div class="corp">
-  <p>Dans cette premiere partie, j'affiche les données stockées dans le service directement.</p>
+  <p>Dans cette premiere partie, j'affiche les données stockées dans le service
+    directement.</p>
     <div *ngIf="dataReady">
       <ul *ngFor="let personne of personnes">
         <li>{{personne.nom}} - {{personne.prenom}}</li>
       </ul>
     </div>
     <h4>Explications :</h4>
-
-
+    <div class="row">
+      <div class="col-sm-4 p2" style="background-color:lavender;">
+        <p>1) On crée le service personnes, dans lequel on créé la fonction getPersonnes, qui nous retournera le json</p>
+        <img src="../assets/service-personne.png" alt="service-personne.png">
+      </div>
+      <div class="col-sm-4 p2" style="background-color:lavenderblush;">
+        <p>2) On ajoute le service dans app.module.ts </p>
+        <img src="../assets/service-module.png" alt="service-personne.png">
+      </div>
+      <div class="col-sm-4 p2" style="background-color:lavender;">
+        <p>3) On importe le service afin de l'utilisé et on affecte les données au tablleau "personnes"</p>
+        <img src="../assets/service-liste.png" alt="service-personne.png">
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-sm-4 p2" style="background-color:lavender;">
+        <p>1) On crée le service personnes, dans lequel on créé la fonction getPersonnes, qui nous retournera le json</p>
+        <img src="../assets/service-personne.png" alt="service-personne.png">
+      </div>
+      <div class="col-sm-4 p2" style="background-color:lavenderblush;">
+        <p>2) On ajoute le service dans app.module.ts </p>
+        <img src="../assets/service-module.png" alt="service-personne.png">
+      </div>
+      <div class="col-sm-4 p2" style="background-color:lavender;">
+        <p>3) On importe le service afin de l'utilisé et on affecte les données au tablleau "personnes"</p>
+        <img src="../assets/service-liste.png" alt="service-personne.png">
+      </div>
+    </div>
   </div>
 </div>
 
