@@ -1,0 +1,29 @@
+<h2>{{titre}}</h2>
+<br />
+<div id="tableau">
+  <h3>Récupération des données json stockées dans un return d'une fonction</h3>
+  <div class="corp">
+  <p>Dans cette premiere partie, j'affiche les données stockées dans le service directement.</p>
+    <div *ngIf="dataReady">
+      <ul *ngFor="let personne of personnes">
+        <li>{{personne.nom}} - {{personne.prenom}}</li>
+      </ul>
+    </div>
+    <h4>Explications :</h4>
+
+
+  </div>
+</div>
+
+<div id="tableau2">
+  <h3>Récupération des données json stockées dans une api (url)</h3>
+  <div class="corp">
+    <p>Dans cette page nous allons afficher des données stockées dans un json crées à partir d'un fichier</p>
+
+
+  </div>
+</div>
+<br />
+
+<button type="button" class="btn btn-primary"><a routerLink="/">Retourner vers la page d'accueil</a></button>
+
